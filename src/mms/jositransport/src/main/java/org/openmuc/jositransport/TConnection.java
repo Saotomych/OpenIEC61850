@@ -662,7 +662,7 @@ public class TConnection {
 					throw new EOFException("Disconnect request. Reason:" + reason);
 
 				}
-				else if (tpduCode == 0x80) {
+				else if (tpduCode == 0x70) {
 					throw new EOFException("Got TPDU error (ER) message");
 				}
 				else {
